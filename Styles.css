@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.brand-title{
+    background-color: #333;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.brand-title span{
+    font-size: 1.5rem;
+    color: white;
+}
+.brand-title .hamburger{
+    position: absolute;
+    top: 8px;
+    left: 360px;
+    cursor: pointer;
+    display: none;
+}
+.navbar{
+    display: flex;
+}
+.navbar ul{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+.navbar ul li {
+    display: inline;
+    padding: 30px;
+    color:red;
+    font-size: 1.5rem;
+}
+.navbar ul li:hover{
+    background-color: grey;
+}   
+@media(max-width: 400px){
+   .navbar{
+        flex-direction: column;
+    }
+    .navbar ul{
+        width: 100%;
+        top: 80px;
+        left: 5px;
+        display: none;
+    }
+    .navbar ul li{
+        display: block;
+    } 
+    .brand-title .hamburger{
+    position: absolute;
+    top: 8px;
+    left: 360px;
+    cursor: pointer;
+    display: block;
+    }
+    
+}
